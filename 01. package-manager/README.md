@@ -47,13 +47,6 @@ node.js 환경의 패키지 매니저로 크게 npm과 yarn, pnpm이 존재하�
 - `pnpm` : 중첩된 `node_modlues` 폴더에 dependency를 저장하는 방식을 개선하기 위한 개념 도입
 - `Yarn-berry` : `PnP`(Plug'n'Play) 모드 (`node_modules` X)
 
-|**Link**|
-|:---|
-[📚 npm 특징 정리 & 분석]()|
-[📚 Yarn classic 특징 정리 & 분석]()|
-[📚 pnpm 특징 정리 & 분석]()|
-[📚 Yarn Berry 특징 정리 & 분석](https://github.com/yoo-jimin127/FrontEnd-PlayGround/blob/main/Package%20Manager/04_YARN-berry.md)|
-
 ## 📌 참고 자료
 - [package와 package manager 분석](https://velog.io/@gil0127/Package-%EC%99%80-Package-manager)
 - [패키지 매니저(Package Maganer)란?](https://computer-science-student.tistory.com/402)
