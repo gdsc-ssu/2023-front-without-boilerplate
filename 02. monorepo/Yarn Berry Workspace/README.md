@@ -1,5 +1,5 @@
 # MonoRepo with Yarn Berry
-Yarn Berry(yarn v2)를 사용해 MonoRepo 구축 실습을 위한 레포지토리입니다.   
+Yarn Berry(yarn v2)를 사용해 MonoRepo 구축 실습을 위한 폴더입니다.   
 
 ## ✅ MonoRepo with Yarn Berry 구축
 우선 MonoRepo를 구축할 폴더 하나를 생성해줍니다.   
