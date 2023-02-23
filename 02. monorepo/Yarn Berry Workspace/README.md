@@ -13,7 +13,7 @@ npm install -g yarn
 
 ### 2️⃣ yarn berry 환경 셋팅
 yarn classic(yarn v1)과 yarn berry(yarn v2)는 버전 차이가 많이 나기에,    
-yarn berry로 설정해줍니다.   
+필요한 경우에 한해 yarn berry로 추가적인 설정을 해줍니다.   
 ```cmd
 yarn set version berry
 ```
@@ -33,7 +33,7 @@ yarn init
 
 ### 3️⃣ package.json - workspace 셋팅
 다음으로 `package.json` 파일에 아래와 같이 작업할 모노레포의 name과 workspace를 추가해줍니다.   
-(name은 자유롭게 설정이 가능하며, 본인의 경우 monorepo로 명명하였습니다.)   
+(name은 자유롭게 설정이 가능하며, 본인의 경우 `monorepo`로 명명하였습니다.)   
 ```json
 {
   "name": "monorepo",
@@ -58,7 +58,7 @@ yarn init
 
 ### 4️⃣ project 생성
 지금부터 생성할 project 코드들은 모두 `package` 폴더 내부에서 관리됩니다.   
-따라서 터미널 명령어를 통해 package 폴더로 이동해줍니다.   
+따라서 터미널 명령어를 통해 `package` 폴더로 이동해줍니다.   
 ```cmd
 cd package
 ```
@@ -72,7 +72,7 @@ npx create-react-app front-mono
 ```cmd
 yarn create vite
 ```
-본인의 경우 vite가 빌드 속도가 빠르고 번들러 사이즈가 작은 vite를 선택해 프로젝트를 구축하였습니다.   
+본인의 경우 빌드 속도가 빠르고 번들러 사이즈가 작은 vite를 선택해 프로젝트를 구축하였습니다.   
 (vite 설정 : `front-mono(name)` → `react` → `Typescript` 설정)    
 
 다음으로 `package` 폴더 내부에 `common` 폴더를 생성해줍니다.   
@@ -126,7 +126,7 @@ yarn dlx @yarnpkg/sdks vscode
 
 ### 6️⃣ project 간 설정 공유 (common ↔️ front-mono)
 monorepo를 통해 프로젝트 간 코드를 공유할 수 있는 동시에,    
-step 5️⃣ 에서 진행하였던 개발 환경 설정 내용 역시 공유할 수 있습니다.   
+step 5️⃣에서 진행하였던 개발 환경 설정 내용 역시 공유할 수 있습니다.   
 
 최상위 폴더(본인의 경우 `MonoRepo-with-YarnBerry`) 바로 아래에 `tsconfig.base.json`파일을 생성해줍니다.   
 다음 `tsconfig.base.json` 파일의 내용을 아래와 같이 작성해줍니다.   
