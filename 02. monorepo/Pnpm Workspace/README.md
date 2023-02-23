@@ -97,13 +97,21 @@ pnpm --stream -r start
 
 <img width="604" alt="스크린샷 2023-02-23 13 19 44" src="https://user-images.githubusercontent.com/67703882/220820581-c02e7365-3617-4b91-a36c-62a99fde2b20.png">
 
-특정 프로젝트의 package.json 내 스크립트만 실행하고 싶다면 `--filter` 플래그를 사용하면 된다.
+특정 프로젝트의 package.json 내 스크립트만 실행하고 싶다면 `--filter` 옵션을 사용하면 된다.
 
-```
+```bash
 pnpm --filter pc-web run start
 ```
 
 <img width="728" alt="스크린샷 2023-02-23 13 19 54" src="https://user-images.githubusercontent.com/67703882/220820596-2b4dc073-1b78-445d-9621-087f1f3106e2.png">
+
+혹은 특정 프로젝트에만 패키지를 추가해주고 싶을 때에도 `--filter` 옵션을 사용할 수 있다.
+
+```bash
+pnpm --filter pc-web add <package-name>
+```
+
+<br />
 
 루트 폴더에서 스크립트를 바로 실행하기 위해 다음과 같이 package.json을 지정해줄 수도 있다.
 
