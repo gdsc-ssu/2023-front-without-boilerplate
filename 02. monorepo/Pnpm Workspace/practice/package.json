@@ -1,0 +1,21 @@
+{
+  "name": "@pnpm-monorepo/root",
+  "version": "1.0.0",
+  "description": "monorepo with pnpm",
+  "main": "index.js",
+  "scripts": {
+    "start": "pnpm --stream -r start",
+    "start:pc": "pnpm --filter pc-web start",
+    "start:mobile": "pnpm --filter mobile-web start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "projects/*"
+  ],
+  "packageManager": "pnpm@7.27.1",
+  "devDependencies": {
+    "pnpm": "^7.27.1"
+  }
+}
